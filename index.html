@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./logo.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Excel</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="page-actions-cont">
+            <div class="page-action">File</div>
+            <div class="page-action selected-page-action">Home</div>
+            <div class="page-action">Insert</div>
+            <div class="page-action">Layout</div>
+            <div class="page-action">Help</div>
+        </div>
+        <div class="cellprop-actions-cont">
+            <span class="material-icons copy">
+                content_copy
+            </span>
+            <span class="material-icons cut">
+                content_cut
+            </span>
+            <span class="material-icons paste">
+                content_paste
+            </span>
+            <select class="font-family-prop">
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Arial">Arial</option>
+                <option value="Caveat">Caveat</option>
+                <option value="Confortaa">Confortaa</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Courier New">Courier New</option>
+                <option value="EB Garamond">EB Garamond</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Impact">Impact</option>
+                <option value="Josefin Sans">Josefin Sans</option>
+                <option value="Lato">Lato</option>
+                <option value="Lexend">Lexend</option>
+                <option value="Lobster">Lobster</option>
+                <option value="Lora">Lora</option>
+                <option value="Merriweather">Merriweather</option>
+                <option value="Monospace">Monospace</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Nunito">Nunito</option>
+                <option value="Open Sans">Open Sans</option>
+                <option value="Oswald">Oswald</option>
+                <option value="Pacifico">Pacifico</option>
+                <option value="Playfair Display">Playfair Display</option>
+                <option value="Poppins">Poppins</option>
+                <option value="Raleway">Raleway</option>
+                <option value="Pacifico">Pacifico</option>
+                <option value="Playfair Display">Playfair Display</option>
+                <option value="Quicksand">Quicksand</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Roboto Mono">Roboto Mono</option>
+                <option value="Roboto Serif">Roboto Serif</option>
+                <option value="Source Sans Pro">Source Sans Pro</option>
+                <option value="Spectral">Spectral</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Ubuntu">Ubuntu</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <select class="font-size-prop">
+                <option value="12px">12</option>
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+                <option value="20px">22</option>
+                <option value="24px">24</option>
+                <option value="20px">26</option>
+                <option value="20px">28</option>
+                <option value="30px">30</option>
+                <option value="30px">32</option>
+                <option value="30px">34</option>
+                <option value="36px">36</option>
+                <option value="30px">38</option>
+                <option value="48px">40</option>
+                <option value="48px">42</option>
+                <option value="48px">44</option>
+                <option value="48px">46</option>
+                <option value="48px">48</option>
+                <option value="60px">50</option>
+                <option value="60px">52</option>
+                <option value="60px">54</option>
+                <option value="60px">56</option>
+                <option value="60px">58</option>
+                <option value="60px">60</option>
+                <option value="60px">62</option>
+                <option value="60px">64</option>
+                <option value="60px">66</option>
+                <option value="60px">68</option>
+                <option value="72px">70</option>
+                <option value="72px">72</option>
+                <option value="72px">74</option>
+                <option value="72px">76</option>
+                <option value="72px">78</option>
+                <option value="84px">80</option>
+                <option value="84px">82</option>
+                <option value="84px">84</option>
+                <option value="84px">86</option>
+                <option value="84px">88</option>
+                <option value="96px">90</option>
+                <option value="96px">92</option>
+                <option value="96px">94</option>
+                <option value="96px">96</option>
+            </select>
+            <span class="material-icons bold">
+                format_bold
+            </span>
+            <span class="material-icons italic">
+                format_italic
+            </span>
+            <span class="material-icons underline">
+                format_underlined
+            </span>
+            <span class="left material-icons alignment">
+                format_align_left
+            </span>
+            <span class="center material-icons alignment">
+                format_align_center
+            </span>
+            <span class="right material-icons alignment">
+                format_align_right
+            </span>
+            <div class="color-prop">
+                <span class="material-icons">
+                    format_color_text
+                </span>
+                <input type="color" class="font-color-prop">
+            </div>
+            <div class="color-prop">
+                <span class="material-icons">
+                    format_color_fill
+                </span>
+                <input type="color" class="BGcolor-prop">
+            </div>
+            <span class="material-icons download">
+                cloud_download
+            </span>
+            <span class="material-icons open">
+                cloud_upload
+            </span>
+        </div>
+        <div class="formula-actions-cont">
+            <input type="text" readonly class="address-bar">
+            <img class="formula-icon" src="https://img.icons8.com/ios/50/000000/formula-fx.png" />
+            <input type="text" class="formula-bar">
+        </div>
+        <div class="grid-cont">
+            <div class="top-left-dummy-box"></div>
+            <div class="address-col-cont"></div>
+            <div class="cells-cont">
+                <div class="address-row-cont"></div>
+            </div>
+        </div>
+        <div class="sheet-actions-cont">
+            <div class="sheet-add-icon">
+                <span class="material-icons">
+                    post_add
+                </span>
+            </div>
+            <div class="sheets-folder-cont">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./grid.js"></script>
+    <script src="./cycleValidation.js"></script>
+    <script src="./sheetsHandling.js"></script>
+    <script src="./cell-properties.js"></script>
+    <script src="./cyclicPathTrace.js"></script>
+    <script src="./formula.js"></script>
+    <script src="./cutCopyPaste.js"></script>
+    <script src="./openSave.js"></script>
+</body>
+
+</html>
